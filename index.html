@@ -43,7 +43,7 @@
       margin: 10px;
       line-height: 1.5;
     }
-    /* Δεξιά κουμπιά (Βοήθεια, Εκτύπωση, ΡίσΚΟ) τοποθετημένα κάθετα */
+    /* Δεξιά κουμπιά (Βοήθεια, Εκτύπωση, Ρίσκο) τοποθετημένα κάθετα */
     .right-buttons {
       position: fixed;
       top: 10px;
@@ -188,7 +188,8 @@
   <div class="right-buttons">
     <button class="btn help-btn" onclick="window.open('https://diktio-kathigiton.net/blog/ta-panta-gia-ta-sximata-logou', '_blank')">Βοήθεια</button>
     <button class="btn print-btn" onclick="printResults()">Εκτύπωση</button>
-    <button class="btn risk-btn" onclick="riskAction()">ΡίσΚΟ</button>
+    <!-- Εδώ έχει τροποποιηθεί η ετικέτα από "ΡίσΚΟ" σε "Ρίσκο" -->
+    <button class="btn risk-btn" onclick="riskAction()">Ρίσκο</button>
   </div>
   
   <!-- Χρονόμετρο -->
@@ -362,7 +363,7 @@
     let timerStarted = false;
     let playerCount = 1;
     
-    // Ξεκίνημα χρονόμετρου (με το πρώτο κλικ)
+    // Ξεκίνημα του χρονόμετρου (με το πρώτο κλικ)
     function startTimer() {
       timerInterval = setInterval(() => {
         timer--;
